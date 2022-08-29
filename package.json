@@ -160,6 +160,7 @@
     "axios": "^0.27.2",
     "base64-stream": "^1.0.0",
     "base64url": "^3.0.1",
+    "bufferutil": "^4.0.6",
     "connected-react-router": "^6.9.2",
     "craco-antd": "^1.19.0",
     "directory-tree": "^2.3.1",
@@ -219,6 +220,7 @@
     "typeface-roboto": "^1.1.13",
     "use-debounce": "^7.0.0",
     "user-agents": "^1.0.1048",
+    "utf-8-validate": "^5.0.9",
     "uuid": "^8.3.2"
   }
 }
