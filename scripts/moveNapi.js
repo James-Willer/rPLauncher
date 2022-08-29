@@ -1,5 +1,23 @@
 const fs = require('fs');
-const os = require('os');
 
-fs.renameSync('./napi.node', `../public/native/${os.platform()}/napi.node`);
-// fs.renameSync('./index.d.ts', `../public/native/${os.platform()}/index.d.ts`);
+fs.copyFile('./napi.node', '../public/native/win32/napi.node', error => {
+  if (error) {
+    throw error;
+  } else {
+    console.log('File has been moved to another folder.');
+  }
+});
+fs.copyFile('./napi.node', '../public/native/linux/napi.node', error => {
+  if (error) {
+    throw error;
+  } else {
+    console.log('File has been moved to another folder.');
+  }
+});
+fs.copyFile('./napi.node', '../public/native/darwin/napi.node', error => {
+  if (error) {
+    throw error;
+  } else {
+    console.log('File has been moved to another folder.');
+  }
+});
